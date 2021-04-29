@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191023/20191023222602.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Laravel バリデート Regex パイプ</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Laravel バリデート Regex パイプ",
+  "datePublished": "2021-04-27",
+  "image": [https://pgmemo.tokyo/data/filedir/1663_2.png,https://camo.qiitausercontent.com/30bb41985140ade3b9e90561b91cf441bbfe7d61/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f34323530613737662d366230382d656339652d363334342d3738653237653433336235632e706e67,https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/303227/3a26bdc5-a7cb-03e6-75f2-d257f8464f69.gif],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=laravel バリデート regex パイプ",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Laravel バリデート Regex パイプ</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-secondary" href="/%E6%A4%B0%E5%AD%90%E3%81%AE%E5%AE%9F%E3%82%92%E5%8F%A9%E3%81%8F%E4%BA%BA%E5%BD%A2.html">椰子の実を叩く人形</a>
+											<a class="badge badge-light" href="/%E5%85%AC%E5%9C%92-%E3%83%87%E3%83%BC%E3%83%88-%E6%9C%8D%E8%A3%85-%E5%A5%B3%E6%80%A7.html">公園 デート 服装 女性</a>
+											<a class="badge badge-danger" href="/%E5%A5%B4%E9%9A%B7%E4%BA%BA%E5%BD%A2-%E3%81%B2%E3%81%A8%E3%81%BF-%E8%AA%BF%E6%95%99011.html">奴隷人形 ひとみ 調教011</a>
+											<a class="badge badge-info" href="/%E6%9D%BE%E5%AF%BF%E4%BA%BA%E5%BD%A2-%E3%81%A4%E3%82%8B%E3%81%97%E9%A3%BE%E3%82%8A.html">松寿人形 つるし飾り</a>
+											<a class="badge badge-danger" href="/3%E5%9B%9E%E7%9B%AE%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88-%E8%84%88%E3%81%82%E3%82%8A-%E5%A5%B3%E6%80%A7.html">3回目のデート 脈あり 女性</a>
+											<a class="badge badge-light" href="/%E6%98%AD%E5%92%8C%E4%BA%BA%E5%BD%A2%E7%94%A8%E3%81%84%E3%81%99.html">昭和人形用いす</a>
+											<a class="badge badge-danger" href="/%E5%90%89%E7%A5%A5%E5%AF%BA-%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC-%E3%83%87%E3%83%BC%E3%83%88-%E5%AE%89%E3%81%84.html">吉祥寺 ディナー デート 安い</a>
+											<a class="badge badge-danger" href="/mineo-au-%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88.html">mineo au キャリアアップデート</a>
+											<a class="badge badge-danger" href="/%E3%81%BC%E3%81%8F%E3%81%AF%E6%98%8E%E6%97%A5%E6%98%A8%E6%97%A5%E3%81%AE%E3%81%8D%E3%81%BF%E3%81%A8%E3%83%87%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E6%9C%97%E8%AA%AD%E5%8A%87.html">ぼくは明日昨日のきみとデートする朗読劇</a>
+											<a class="badge badge-warning" href="/%E3%83%9E%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0-%E3%82%A2%E3%83%97%E3%83%AA-%E4%BD%95-%E5%9B%9E%E7%9B%AE-%E3%81%AE-%E3%83%87%E3%83%BC%E3%83%88.html">マッチング アプリ 何 回目 の デート</a>
+											<a class="badge badge-secondary" href="/%E5%AD%A6%E5%A4%A9%E5%8D%B3%E7%9A%84%E6%A9%9F%E6%A2%B0%E4%BA%BA%E5%BD%A2.html">学天即的機械人形</a>
+											<a class="badge badge-secondary" href="/%E5%90%8D-%E9%A7%85-%E9%8D%8B-%E5%80%8B%E5%AE%A4-%E3%83%87%E3%83%BC%E3%83%88.html">名 駅 鍋 個室 デート</a>
+											<a class="badge badge-dark" href="/http-boketejp-%E3%83%87%E3%83%BC%E3%83%88%E3%81%AA%E3%81%86%E3%81%AB%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%84%E3%81%84%E3%82%88.html">http boketejp デートなうに使っていいよ</a>
+											<a class="badge badge-success" href="/%E7%A7%81%E3%81%AE%E4%BA%BA%E5%BD%A2%E3%81%AF%E3%82%88%E3%81%84%E4%BA%BA%E5%BD%A2-%E6%BC%AB%E7%94%BB.html">私の人形はよい人形 漫画</a>
+											<a class="badge badge-secondary" href="/%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E5%8D%B1%E3%81%AA%E3%81%84%E8%A3%8F%E9%81%93%E3%83%87%E3%83%BC%E3%83%88-%E6%B8%8B%E8%B0%B7%E7%B7%A8-%E5%B8%8C%E5%BF%97%E3%81%82%E3%81%84%E3%81%AE-openload.html">ちょっと危ない裏道デート 渋谷編 希志あいの openload</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/dd163ad8258e0c9601e5fbfa14ecde0a.png" data-lightbox="roadtrip" data-title="Php Laravel6 正規表現のバリデーション の扱いについて Teratail">
+						<img class="card-img" src="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/dd163ad8258e0c9601e5fbfa14ecde0a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5a09R0dRCNaiBvk1PwWhSN5TaLinmgAqSfsnYFeJQHPZpzRmD1gRm99Ewo5ooTuQUZT8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Php Laravel6 正規表現のバリデーション の扱いについて Teratail
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.image.st-hatena.com/image/square/27bbd28a3c99acdaebc9d2d33b612c8c80595baa/backend=imagemagick;height=180;version=1;width=180/https%3A%2F%2Fimages-fe.ssl-images-amazon.com%2Fimages%2FI%2F51cRxtwo7IL._SL160_.jpg" data-lightbox="roadtrip" data-title="Php Laravel バリデーション バリデーション Regexでパイプを使いたい １分技術ブログ">
+						<img class="card-img" src="https://cdn.image.st-hatena.com/image/square/27bbd28a3c99acdaebc9d2d33b612c8c80595baa/backend=imagemagick;height=180;version=1;width=180/https%3A%2F%2Fimages-fe.ssl-images-amazon.com%2Fimages%2FI%2F51cRxtwo7IL._SL160_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOPfktas_bNfnA0ZCGemtzTOzq6OsxiYtpiaz6EeRuz9eOauc4bvQqyqho_XzU0d7YuQI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Php Laravel バリデーション バリデーション Regexでパイプを使いたい １分技術ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.image.st-hatena.com/image/square/4911de9e234897f5b164682139fc4d424ee0ba06/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51I2lZaKIoL._SL160_.jpg" data-lightbox="roadtrip" data-title="Php Laravel バリデーション バリデーション Regexでパイプを使いたい １分技術ブログ">
+						<img class="card-img" src="https://cdn.image.st-hatena.com/image/square/4911de9e234897f5b164682139fc4d424ee0ba06/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51I2lZaKIoL._SL160_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROlFObIeJ_cuefZU5qe2y5BHS3q_ZYLovACQ6b-0Qwp0WE_Hd6MpMicuEWCru6rxa';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Php Laravel バリデーション バリデーション Regexでパイプを使いたい １分技術ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.image.st-hatena.com/image/square/071eb15062f4a6f4d4515f49756dc33e82646500/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51aBM9yf2LL._SL160_.jpg" data-lightbox="roadtrip" data-title="Php Laravel バリデーション バリデーション Regexでパイプを使いたい １分技術ブログ">
+						<img class="card-img" src="https://cdn.image.st-hatena.com/image/square/071eb15062f4a6f4d4515f49756dc33e82646500/backend=imagemagick;height=100;version=1;width=100/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51aBM9yf2LL._SL160_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_niMCR00b-L4sDbj0YEPcDBvs75IKMBboeomv5Vi5dDQbhg7jHKfl016fCH8dCQOy';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Php Laravel バリデーション バリデーション Regexでパイプを使いたい １分技術ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://tech.shellingsoft.com/wp-content/uploads/2017/11/cropped-cropped-favicon.png" data-lightbox="roadtrip" data-title="Laravelのvalidateで正規表現のパイプを使う方法 Shellingsoft開発者ブログ">
+						<img class="card-img" src="https://tech.shellingsoft.com/wp-content/uploads/2017/11/cropped-cropped-favicon.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTNIRHJsFuCoRKsg55Whz7ScbB5qfHWyAxDI6Fej0y6kXY-xlLiPF93ks2_kwag2T7aI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravelのvalidateで正規表現のパイプを使う方法 Shellingsoft開発者ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/10328749687187451849/8599973812336415392/1515683628" data-lightbox="roadtrip" data-title="Laravel 5 5 バリデーション ルール 日本語 Kojimankomanko">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/10328749687187451849/8599973812336415392/1515683628" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Fn-Kd9vkcExSGhNzkBzOTWyxzklnlfxOwbFTrTiPjERCFds9xb9U0fJwml3Hbrvu-Ns';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 5 5 バリデーション ルール 日本語 Kojimankomanko
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://staging-qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E5%25AD%25A6%25E7%25BF%2592%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7FormRequest%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25B9%25E3%2581%25A8%25E3%2581%259D%25E3%2582%258C%25E3%2581%25AB%25E5%25AF%25BE%25E3%2581%2599%25E3%2582%258B%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E3%2581%25A4%25E3%2581%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%255BLaravel%255D%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dca9352ee47ebf0b8310d9ed34e7bef6e&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540shibaHaya%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D276e57a0db07cf567d21187ccad8cf35&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=6b5118a674bef3a85eeb001032367fc4" data-lightbox="roadtrip" data-title="学習として自動でformrequestクラスとそれに対するテストを作成できるものをつくってみました Laravel Qiita">
+						<img class="card-img" src="https://staging-qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E5%25AD%25A6%25E7%25BF%2592%25E3%2581%25A8%25E3%2581%2597%25E3%2581%25A6%25E8%2587%25AA%25E5%258B%2595%25E3%2581%25A7FormRequest%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25B9%25E3%2581%25A8%25E3%2581%259D%25E3%2582%258C%25E3%2581%25AB%25E5%25AF%25BE%25E3%2581%2599%25E3%2582%258B%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%2592%25E4%25BD%259C%25E6%2588%2590%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2582%2582%25E3%2581%25AE%25E3%2582%2592%25E3%2581%25A4%25E3%2581%258F%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%255BLaravel%255D%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dca9352ee47ebf0b8310d9ed34e7bef6e&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fstaging-qiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540shibaHaya%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D276e57a0db07cf567d21187ccad8cf35&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=6b5118a674bef3a85eeb001032367fc4" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gek_u00XbOg7t24DK8E0Ak8TdgF1mMS0O66be3f3n9JhhX1FG3xvPc2Z-BJGgWxYQqU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				学習として自動でformrequestクラスとそれに対するテストを作成できるものをつくってみました Laravel Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191023/20191023222602.png" data-lightbox="roadtrip" data-title="はじめてlaravel6 0 バリデーション追加 カスタムバリデーション 入力画面 ２ Boku のitな日常">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191023/20191023222602.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ1jzuUwMVOhABdt99E-e7jN0Q7GsUZK8obXNXNDFj410G27sOunEDNFOOcgMKcx8ozsY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				はじめてlaravel6 0 バリデーション追加 カスタムバリデーション 入力画面 ２ Boku のitな日常
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E3%2580%2590laravel%25E3%2580%2591Validator%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D05bd94cc28d4e2f56b24044dd6d8cdc4&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540gone0021%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Df20b4f9f134960dc54668f1c33528b75&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=a3e3714534a16a20166c9d156e4895c3" data-lightbox="roadtrip" data-title="Laravel Validatorによるバリデーション Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3D%25E3%2580%2590laravel%25E3%2580%2591Validator%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D05bd94cc28d4e2f56b24044dd6d8cdc4&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540gone0021%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Df20b4f9f134960dc54668f1c33528b75&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=a3e3714534a16a20166c9d156e4895c3" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtC7TZgDUDevSQU1F-WbAbbXCTrfF5Zr9l0HwBfHmwKCl19uHurRhqFyo-CPnGRwEmCzc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validatorによるバリデーション Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F325600%2F38ce1d39-cd17-f4d5-045f-b76663fc03a3.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=6997e7141a783cfe5e363d96714caaec" data-lightbox="roadtrip" data-title="学習として自動でformrequestクラスとそれに対するテストを作成できるものをつくってみました Laravel Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F325600%2F38ce1d39-cd17-f4d5-045f-b76663fc03a3.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=6997e7141a783cfe5e363d96714caaec" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ON94eqlfkwszWGGJCGHyoE_d-cSFMz1sIGE8HKTsn0OkQB61DEi3WCczP6xbxQ3U2A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				学習として自動でformrequestクラスとそれに対するテストを作成できるものをつくってみました Laravel Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://wonwon-eater.com/wp-content/uploads/2020/03/02a3db81825679566cd0bcf791123ace-619x410.png" data-lightbox="roadtrip" data-title="Laravel 数値範囲のバリデーションで負の値を含む方法 Wonwon Eater">
+						<img class="card-img" src="https://wonwon-eater.com/wp-content/uploads/2020/03/02a3db81825679566cd0bcf791123ace-619x410.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMIC20YLlN5nF5AFrJHtkyz-o0P6SBL3x8l3aCnc1jR2yDutq7btprVUZJgRP6wkpEac';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 数値範囲のバリデーションで負の値を含む方法 Wonwon Eater
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pgmemo.tokyo/data/filedir/1663_2.png" data-lightbox="roadtrip" data-title="Phpフレームワークlaravel プログラムメモ">
+						<img class="card-img" src="https://pgmemo.tokyo/data/filedir/1663_2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mFtdAmpC6lqrBPhwvTt0qVJj0QDHxTN-fSQPr7RladsZo889j8kXVGAdUsOwFZ1plbg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Phpフレームワークlaravel プログラムメモ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/1e7b280c1f1077e136ffe90b08f705bf3e891845/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3134303834362f33353135653331662d333564322d373162322d633234312d6330363062363730323463662e706e67" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://camo.qiitausercontent.com/1e7b280c1f1077e136ffe90b08f705bf3e891845/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3134303834362f33353135653331662d333564322d373162322d633234312d6330363062363730323463662e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR731mbZQExW-XzCmjaEDozInLnP-1azxjbAWeKyfiO8X0FS19PkNHDdSSCDz_LPrNQhUk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pgmemo.tokyo/data/filedir/1348_3.png" data-lightbox="roadtrip" data-title="Phpフレームワークlaravel プログラムメモ">
+						<img class="card-img" src="https://pgmemo.tokyo/data/filedir/1348_3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OxHW-JMlfL-_O4rShn_Oo9RjL68VCQ3jud7JuvJiVNAx61WNcmHrU-4RNkDkFPD3uhE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Phpフレームワークlaravel プログラムメモ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.image.st-hatena.com/image/square/e0375c367881c849deadb1bb373586157a87a615/backend=imagemagick;height=180;version=1;width=180/https%3A%2F%2Fimages-fe.ssl-images-amazon.com%2Fimages%2FI%2F51M9CvLpz3L._SL160_.jpg" data-lightbox="roadtrip" data-title="Php Laravel リダイレクトバック Redirect Back でのurlクエリパラメータ対応 １分技術ブログ">
+						<img class="card-img" src="https://cdn.image.st-hatena.com/image/square/e0375c367881c849deadb1bb373586157a87a615/backend=imagemagick;height=180;version=1;width=180/https%3A%2F%2Fimages-fe.ssl-images-amazon.com%2Fimages%2FI%2F51M9CvLpz3L._SL160_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL0dNuw-R0KZ6DVYFvhPVxB4OOkMYffDmqE5gbQRxBZnpw3QRH1JS83EFew6ppViAgLwc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Php Laravel リダイレクトバック Redirect Back でのurlクエリパラメータ対応 １分技術ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pgmemo.tokyo/data/filedir/1543_2.png" data-lightbox="roadtrip" data-title="Phpフレームワークlaravel プログラムメモ">
+						<img class="card-img" src="https://pgmemo.tokyo/data/filedir/1543_2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGjCLhBuzoHKqsLu0UgK8ddvAyHEhsBUYR2762YbDWi2nbiD5Vu0wPwDkM5FT2eXez9w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Phpフレームワークlaravel プログラムメモ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://magazine-cf.techacademy.jp/wp-content/uploads/2018/07/105073454_m.jpg" data-lightbox="roadtrip" data-title="Laravelでバリデーションを使う方法 初心者向け Techacademyマガジン">
+						<img class="card-img" src="https://magazine-cf.techacademy.jp/wp-content/uploads/2018/07/105073454_m.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_fr-tkWA6z2upmcOBfbgYrXDnZl4AHergOH6UxV0I-dAP1IDkt1mo8WGGowf4WQmiMt0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravelでバリデーションを使う方法 初心者向け Techacademyマガジン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F104530%2F3f429b3d-ffb7-9efc-9322-153dfac943ac.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=ca68ba310ad0d930e0cf14054a239b28" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F104530%2F3f429b3d-ffb7-9efc-9322-153dfac943ac.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=ca68ba310ad0d930e0cf14054a239b28" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTeZvTcD_qTVg1rqni6OpxbDVwmU4ktCFGkWhVpFLSOClMpFYb2OUW09QEkcszUpoK_T0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/303227/3a26bdc5-a7cb-03e6-75f2-d257f8464f69.gif" data-lightbox="roadtrip" data-title="Swift Alamofire Swiftyjsonでqiitaの記事の検索結果をtableviewに表示する Api Qiita">
+						<img class="card-img" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/303227/3a26bdc5-a7cb-03e6-75f2-d257f8464f69.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuqEQIvbn9stP8349Jx-mgDDGFhcgV_fOqz-0VwqZLozQnshKDTbQXhMdR6RiFpIP5BBw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Swift Alamofire Swiftyjsonでqiitaの記事の検索結果をtableviewに表示する Api Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://webxreal.com/wp-content/uploads/2020/05/webxreal-630-php-codeigniter.jpg" data-lightbox="roadtrip" data-title="Codeingiter3 バリデーションまとめ Webxreal">
+						<img class="card-img" src="https://webxreal.com/wp-content/uploads/2020/05/webxreal-630-php-codeigniter.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPmSUeBIbARARZWvAQonkPrUilCS_F5Lwvai-WrdjXy8svE1lKDGq7Sa6UCEAHha_lIG8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Codeingiter3 バリデーションまとめ Webxreal
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/30bb41985140ade3b9e90561b91cf441bbfe7d61/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f34323530613737662d366230382d656339652d363334342d3738653237653433336235632e706e67" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://camo.qiitausercontent.com/30bb41985140ade3b9e90561b91cf441bbfe7d61/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f34323530613737662d366230382d656339652d363334342d3738653237653433336235632e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEuf_772aMUMEVYFmfCS48JbrKiVC_IDG0w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/aa0d041d448d1d665df902af147149d01087e3dc/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f35396361626561642d383038662d323833372d663235612d3164323562393037666431652e706e67" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://camo.qiitausercontent.com/aa0d041d448d1d665df902af147149d01087e3dc/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f35396361626561642d383038662d323833372d663235612d3164323562393037666431652e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHsQLvdxHkAbUv_Ea3oMnm4JrDNE1buGwGtg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191003/20191003220222.png" data-lightbox="roadtrip" data-title="はじめてlaravel6 0 バリデーション追加 カスタムバリデーション 入力画面 ２ Boku のitな日常">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191003/20191003220222.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1EfemNkP2ebSyRjuugiHtgh_JwE_ra46mKw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				はじめてlaravel6 0 バリデーション追加 カスタムバリデーション 入力画面 ２ Boku のitな日常
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pgmemo.tokyo/data/filedir/1348_2.png" data-lightbox="roadtrip" data-title="Phpフレームワークlaravel プログラムメモ">
+						<img class="card-img" src="https://pgmemo.tokyo/data/filedir/1348_2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWHyGKLFRsOXdG7TMCX4TejJtWROwboviT-w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Phpフレームワークlaravel プログラムメモ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://images-fe.ssl-images-amazon.com/images/I/51M9CvLpz3L._SL160_.jpg" data-lightbox="roadtrip" data-title="Php Laravel リダイレクトバック Redirect Back でのurlクエリパラメータ対応 １分技術ブログ">
+						<img class="card-img" src="https://images-fe.ssl-images-amazon.com/images/I/51M9CvLpz3L._SL160_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoiRxPEVJh10dD-_ndfndcArIe1F4_PQH38w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Php Laravel リダイレクトバック Redirect Back でのurlクエリパラメータ対応 １分技術ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://2.bp.blogspot.com/-Cg0EEn3rgWQ/Xuc7dy0f1SI/AAAAAAAAEuY/-68o8e_LFDYkwoI05LjDaCZ1DcF5sypDgCLcBGAsYHQ/s1600/2020y06m15d_162740814.jpg" data-lightbox="roadtrip" data-title="Laravel7でデータベース連携 なんぶ電子">
+						<img class="card-img" src="https://2.bp.blogspot.com/-Cg0EEn3rgWQ/Xuc7dy0f1SI/AAAAAAAAEuY/-68o8e_LFDYkwoI05LjDaCZ1DcF5sypDgCLcBGAsYHQ/s1600/2020y06m15d_162740814.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRxFGMcbx31M28wnCCaPivq2W4tegDwhTQ0g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel7でデータベース連携 なんぶ電子
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/0d75eccba039037ee43a6c0d4de5fc49c55d43b5/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f33663064333966642d613631382d653665302d353435332d3535633163663232373532392e706e67" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://camo.qiitausercontent.com/0d75eccba039037ee43a6c0d4de5fc49c55d43b5/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f33663064333966642d613631382d653665302d353435332d3535633163663232373532392e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQGg0OdsuRu9VeKZpJUJQi-ha2RWygntjdxA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pgmemo.tokyo/data/filedir/1800_2.png" data-lightbox="roadtrip" data-title="Phpフレームワークlaravel プログラムメモ">
+						<img class="card-img" src="https://pgmemo.tokyo/data/filedir/1800_2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQnzTqzfOcW5tOpnjT0H1Xk3gNHVSOr5x5A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Phpフレームワークlaravel プログラムメモ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/7a335943488c33261f622b50fe1712729cf84ef1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f66323135323766342d613433642d323661662d333538302d6336313466386131376430352e706e67" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://camo.qiitausercontent.com/7a335943488c33261f622b50fe1712729cf84ef1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3130343533302f66323135323766342d613433642d323661662d333538302d6336313466386131376430352e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyVx_s2kv0ukPE_EyXLtRutCNhP2v55ilNSQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F104530%2F70f674ea-41da-f34c-6b49-2b65e585bcd9.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=bd100c5574322abfc0f9c0697b3756dd" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F104530%2F70f674ea-41da-f34c-6b49-2b65e585bcd9.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=bd100c5574322abfc0f9c0697b3756dd" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUknQkxuci85yZX1TpfI2XeYbZju3Y7nERvA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pgmemo.tokyo/data/filedir/1952_2.png" data-lightbox="roadtrip" data-title="Phpフレームワークlaravel プログラムメモ">
+						<img class="card-img" src="https://pgmemo.tokyo/data/filedir/1952_2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvay8AFc6yuk4u0Yily3behwiLgb0tokK1gA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Phpフレームワークlaravel プログラムメモ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F406662%2F3c3f77ab-22cd-41a2-c7b1-425f9345c988.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=cb818aff380132c68b790f55b81b0b06" data-lightbox="roadtrip" data-title="記事">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F406662%2F3c3f77ab-22cd-41a2-c7b1-425f9345c988.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=cb818aff380132c68b790f55b81b0b06" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpOHB21vjl7gOeVRRzTuBofB0gKeP8wvrcsA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				記事
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pgmemo.tokyo/data/filedir/1663_1.png" data-lightbox="roadtrip" data-title="Phpフレームワークlaravel プログラムメモ">
+						<img class="card-img" src="https://pgmemo.tokyo/data/filedir/1663_1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYTW6k1mV-QjySRsDXc9dLiFnanOZHl-bgSw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Phpフレームワークlaravel プログラムメモ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>

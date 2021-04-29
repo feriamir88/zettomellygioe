@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://vuejsdevelopers.com/images/posts/form_handling_vuelidate.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Vuejs Select バリデート</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Vuejs Select バリデート",
+  "datePublished": "2021-04-27",
+  "image": [https://miro.medium.com/max/10000/0*NfBTJMLFR_ANLo0e,https://i.stack.imgur.com/6uKeW.png,https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-001.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=vuejs select バリデート",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Vuejs Select バリデート</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-warning" href="/%E9%87%8E%E7%90%83-%E8%A6%B3%E6%88%A6-%E3%83%87%E3%83%BC%E3%83%88-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3.html">野球 観戦 デート ファッション</a>
+											<a class="badge badge-dark" href="/%E9%A6%99%E5%B7%9D-%E9%9B%A8-%E3%81%AE-%E6%97%A5-%E3%83%87%E3%83%BC%E3%83%88.html">香川 雨 の 日 デート</a>
+											<a class="badge badge-success" href="/2%E5%9B%9E%E7%9B%AE%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88%E4%B8%AD-%E8%84%88%E3%81%82%E3%82%8A-%E5%A5%B3%E6%80%A7.html">2回目のデート中 脈あり 女性</a>
+											<a class="badge badge-danger" href="/%E6%B5%85%E8%8D%89-%E5%91%A8%E8%BE%BA-%E3%83%87%E3%83%BC%E3%83%88-%E3%83%97%E3%83%A9%E3%83%B3.html">浅草 周辺 デート プラン</a>
+											<a class="badge badge-danger" href="/%E7%9F%AD%E7%B7%A8%E3%83%9B%E3%83%A9%E3%83%BC-%E3%83%80%E3%83%B3%E3%83%9C%E3%83%BC%E3%83%AB-%E3%82%AF%E3%83%9E%E3%81%AE%E4%BA%BA%E5%BD%A2.html">短編ホラー ダンボール クマの人形</a>
+											<a class="badge badge-light" href="/%E3%81%BE%E3%81%A0%E9%96%93%E3%81%AB%E5%90%88%E3%81%86%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%87%E3%83%B3%E3%82%A6%E3%82%A3%E3%83%BC%E3%82%AF%E3%83%87%E3%83%BC%E3%83%88.html">まだ間に合うゴールデンウィークデート</a>
+											<a class="badge badge-warning" href="/usj%E3%81%A7%E3%83%87%E3%83%BC%E3%83%88%E3%81%97%E3%81%9F%E3%81%84%E3%82%B8%E3%83%A3%E3%83%8B%E3%83%BC%E3%82%BA%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0.html">usjでデートしたいジャニーズランキング</a>
+											<a class="badge badge-warning" href="/%E5%A4%A7%E5%AE%AE-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%8A-%E5%BA%97.html">大宮 デート お 店</a>
+											<a class="badge badge-light" href="/last-kiss-%E6%9C%80%E5%BE%8C%E3%81%AB%E3%82%AD%E3%82%B9%E3%81%99%E3%82%8B%E3%83%87%E3%83%BC%E3%83%88-%E5%87%BA%E6%BC%94%E8%80%85.html">last kiss 最後にキスするデート 出演者</a>
+											<a class="badge badge-success" href="/%E4%B8%89-%E5%9B%9E%E7%9B%AE-%E3%83%87%E3%83%BC%E3%83%88-%E5%91%8A%E7%99%BD-%E5%A4%B1%E6%95%97.html">三 回目 デート 告白 失敗</a>
+											<a class="badge badge-success" href="/%E4%BB%98%E3%81%8D%E5%90%88%E3%81%86-%E5%89%8D-%E3%83%87%E3%83%BC%E3%83%88-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96.html">付き合う 前 デート ドライブ</a>
+											<a class="badge badge-warning" href="/2%E5%9B%9E%E3%82%81-%E3%83%87%E3%83%BC%E3%83%88-%E8%A1%8C%E3%81%8F%E3%81%8B%E3%81%A9%E3%81%86%E3%81%8B.html">2回め デート 行くかどうか</a>
+											<a class="badge badge-success" href="/%E5%A4%AA%E9%99%BD%E9%9B%BB%E6%B1%A0-%E9%A6%96%E6%8C%AF%E3%82%8A%E4%BA%BA%E5%BD%A2-%E4%BF%AE%E7%90%86.html">太陽電池 首振り人形 修理</a>
+											<a class="badge badge-info" href="/%E6%9D%B1%E4%BA%AC-%E5%80%8B%E5%AE%A4-%E3%83%87%E3%83%BC%E3%83%88-%E8%AA%95%E7%94%9F-%E6%97%A5.html">東京 個室 デート 誕生 日</a>
+											<a class="badge badge-primary" href="/%E7%97%85%E6%B0%97%E3%81%AE%E3%81%8A%E4%BA%BA%E5%BD%A2.html">病気のお人形</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-002.png" data-lightbox="roadtrip" data-title="Vue Js 3 Veevalidate Bootstrapvue Form Validation Example Positronx Io">
+						<img class="card-img" src="https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-002.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXSfskK9ZT86ov9MxCt-9747SIj8dEy8w084XJ9i9VGQpzFKeOLtEEtn9yefEPO85jhnE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Js 3 Veevalidate Bootstrapvue Form Validation Example Positronx Io
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://webomnizz.com/wp-content/uploads/2020/03/vuejs-form-handling-1-1024x510.png" data-lightbox="roadtrip" data-title="Form Handling And Validation With Vuejs Webomnizz">
+						<img class="card-img" src="https://webomnizz.com/wp-content/uploads/2020/03/vuejs-form-handling-1-1024x510.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ln_zKN1T5J7d03lortJDHewoG6XpcMifoqgHJiFE1uKJV05_YrA1RqLNVjptZNoY8G4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Handling And Validation With Vuejs Webomnizz
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.pusher.com/wp-content/uploads/2017/08/complete-guide-form-validation-vue-5.png" data-lightbox="roadtrip" data-title="Complete Guide To Form Validation In Vue">
+						<img class="card-img" src="https://blog.pusher.com/wp-content/uploads/2017/08/complete-guide-form-validation-vue-5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQFuCT4rr6NUbnSL6exGaUOGZgVyMoONDfc_l50cy8-E--5kFzJDVT4zzoiyyfZ6l7ApI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Complete Guide To Form Validation In Vue
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/1061/1*mP3ujHhKk-yFDsRntcapPw.png" data-lightbox="roadtrip" data-title="Vue Js Forms Components And Considerations By Harshal Patil Webf">
+						<img class="card-img" src="https://miro.medium.com/max/1061/1*mP3ujHhKk-yFDsRntcapPw.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwHQh1dDsanpGI3uxHfjfwswt-E9UTVW9GQUo6eWID-DEQ2vN86JBzx8DfdZKQrAbSjM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Js Forms Components And Considerations By Harshal Patil Webf
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://vuejsdevelopers.com/images/posts/form_handling_vuelidate.png" data-lightbox="roadtrip" data-title="Simple Vue Js Form Validation With Vuelidate Vue Js Developers">
+						<img class="card-img" src="https://vuejsdevelopers.com/images/posts/form_handling_vuelidate.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkW7c-8qWyr_Fj3EaoBHAouxz4fUEg1xuvkDXRJpeRSjup2twe4XhUd4APf7ekA1ugu8M';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Simple Vue Js Form Validation With Vuelidate Vue Js Developers
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-001.png" data-lightbox="roadtrip" data-title="Vue Js 3 Veevalidate Bootstrapvue Form Validation Example Positronx Io">
+						<img class="card-img" src="https://www.positronx.io/wp-content/uploads/2020/04/vue-veevalidate-9516-001.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZzfu1CDjZYnO30lR1tT9GCSx87560B_YiYjqEIm0BIoTVVgKYsA_4y7CYR0ziP40G7g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Js 3 Veevalidate Bootstrapvue Form Validation Example Positronx Io
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://res.cloudinary.com/practicaldev/image/fetch/s--6-4kE9Du--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://cl.ly/3I3N321q0n2T/download/Image%25202018-04-25%2520at%25201.28.14%2520PM.png" data-lightbox="roadtrip" data-title="Veevalidate Is Useful For Vue Js Frontend Validation Dev Community">
+						<img class="card-img" src="https://res.cloudinary.com/practicaldev/image/fetch/s--6-4kE9Du--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://cl.ly/3I3N321q0n2T/download/Image%25202018-04-25%2520at%25201.28.14%2520PM.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq5Wtmj7EnrBTLHkOBRD9Gu-R-N0qK0vbvCSGPlQimzITLdskLCZGMRJH0DWePx9RZ1wI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Veevalidate Is Useful For Vue Js Frontend Validation Dev Community
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.pusher.com/wp-content/uploads/2017/08/complete-guide-form-validation-vue-1.png" data-lightbox="roadtrip" data-title="Complete Guide To Form Validation In Vue">
+						<img class="card-img" src="https://blog.pusher.com/wp-content/uploads/2017/08/complete-guide-form-validation-vue-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebqBWJPa7maf__GE-2m3LcuRMnO6BeELNFQ5t4pSVO9UG4n7hcXjS2HlCikC2bXH-5ro';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Complete Guide To Form Validation In Vue
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://vuejsexamples.net/wp-content/uploads/2017/08/vuejs-form-2.png" data-lightbox="roadtrip" data-title="Vuejs Form Vue Js Examples">
+						<img class="card-img" src="https://vuejsexamples.net/wp-content/uploads/2017/08/vuejs-form-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVPlbaDh7TxuOx8fIaWTgge3oG57IE7ZP02kf5ZY1OLy-Xblve11hWeP4CVIzeAGfMUs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vuejs Form Vue Js Examples
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.vuescript.com/wp-content/uploads/2019/12/Format-Validate-Credit-Card-Numbers-In-Vue.js-credit-card-validation.png" data-lightbox="roadtrip" data-title="Format Validate Credit Card Numbers In Vue Js Credit Card Validation Vue Script">
+						<img class="card-img" src="https://www.vuescript.com/wp-content/uploads/2019/12/Format-Validate-Credit-Card-Numbers-In-Vue.js-credit-card-validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBG8irv0VknhYzpE3m147Xmk-xs6fSQaHDL5YNgUFIw6aLVBp-BG8xtEAkB9DG4vn1saA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Format Validate Credit Card Numbers In Vue Js Credit Card Validation Vue Script
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.vuescript.com/wp-content/uploads/2016/11/Vee-Validate.png" data-lightbox="roadtrip" data-title="Simple Vue Js Input Validation Plugin Vee Validate Vue Script">
+						<img class="card-img" src="https://www.vuescript.com/wp-content/uploads/2016/11/Vee-Validate.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG6TtZyZoBh6cjijjOElu43yolOlIbMLSaFlX4liiU6beRGK9oOJkvtTcxEmPD0GQJh3A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Simple Vue Js Input Validation Plugin Vee Validate Vue Script
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://1.bp.blogspot.com/-DRPu9Ov8ye4/YEtGM_pantI/AAAAAAAAg68/M6500OT5FfQEJV1eulG2MpD6WbLfVnnLACLcBGAsYHQ/w400-h217/form_data_driven_bit.png" data-lightbox="roadtrip" data-title="Adam Cameron S Dev Blog Vue Js And Tdd Adding Client Side Form Field Validation">
+						<img class="card-img" src="https://1.bp.blogspot.com/-DRPu9Ov8ye4/YEtGM_pantI/AAAAAAAAg68/M6500OT5FfQEJV1eulG2MpD6WbLfVnnLACLcBGAsYHQ/w400-h217/form_data_driven_bit.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88DLxAixLDAPCJk_XRxW_TpZnN2OM9ZAMzgxdMm7zSckO_pN07nrSdo7-2dUyh1inrMY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Adam Cameron S Dev Blog Vue Js And Tdd Adding Client Side Form Field Validation
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/6uKeW.png" data-lightbox="roadtrip" data-title="Vee Validate Dependent Dropdown With Multiple Conditions Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/6uKeW.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-v3UoijPAB9o4OrfudXZRCqhpAU8NgNy2oPYriOBaDJb6HW7KqaBPA4louk00Eds2UPo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vee Validate Dependent Dropdown With Multiple Conditions Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.morioh.com/2020/03/14/1e3df547fd5a.jpg" data-lightbox="roadtrip" data-title="Form Handling And Validation With Vuejs">
+						<img class="card-img" src="https://i.morioh.com/2020/03/14/1e3df547fd5a.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX80Z7UyVGupuocmEgF03mwIPUQg7qyWSjLkp66crESyZ5t_YrKbdL_MDTX3mfByVqWX4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Handling And Validation With Vuejs
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/F4788.jpg" data-lightbox="roadtrip" data-title="How To Validate If Imported File Is A Csv File Type In Vue Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/F4788.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxa8JavJRGo_PzIGBJikz0-YO25FA6XGZ9Qg3O7glkU71FFKlSy_WvsxQTeXtQFwWACvU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Validate If Imported File Is A Csv File Type In Vue Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/1200/1*CLpR9K8IFDRtb0prEE625Q.png" data-lightbox="roadtrip" data-title="How To Create A Custom Selected List Using Multiselect For Vue Js By Hugo Carneiro Medium">
+						<img class="card-img" src="https://miro.medium.com/max/1200/1*CLpR9K8IFDRtb0prEE625Q.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKVh5WIwU_E2ijqVBBB8BYpjbqHHdeso5_vytHEkzoLuFmhMhsmipJWPIPWFsiKSITeC0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create A Custom Selected List Using Multiselect For Vue Js By Hugo Carneiro Medium
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/5IlfH.png" data-lightbox="roadtrip" data-title="Vue Element Ui Form Validation Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/5IlfH.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3tvG_2656-IOejOjYT29ffK42YAaYYZywd4FBY9-7ieDKEKHESh0g2RzkiSQXxTlGdlQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Element Ui Form Validation Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.logrocket.com/wp-content/uploads/2020/03/vue-form-email-validation.gif" data-lightbox="roadtrip" data-title="Using Watchers For Form Input Validation In Vue Js Logrocket Blog">
+						<img class="card-img" src="https://blog.logrocket.com/wp-content/uploads/2020/03/vue-form-email-validation.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8xC8xkwzeYpgGLLm2muhyrRQYR3q8XGvCtkx_n7GPYeSs3Uqrr6VgC4umMp9GKtu08mc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Using Watchers For Form Input Validation In Vue Js Logrocket Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.vuescript.com/wp-content/uploads/2020/10/Accessible-Select-Dropdown-Component-For-Vue.js-370x297.png" data-lightbox="roadtrip" data-title="Vue Js Multiple Select Components Vue Script">
+						<img class="card-img" src="https://www.vuescript.com/wp-content/uploads/2020/10/Accessible-Select-Dropdown-Component-For-Vue.js-370x297.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbUyqe1Y3WVOzQ_J6Mj6s2a3eEN1LwSFGbd677DsMDZSsrDFwVXG6V4N895zLmE6fGD0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Js Multiple Select Components Vue Script
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/700/1*OzJ7bW0VsC7fIlBB5fy39g.gif" data-lightbox="roadtrip" data-title="Multi Step Form Component In Vue I Recently Started Learning Vuejs And By Tushar Gugnani Medium">
+						<img class="card-img" src="https://miro.medium.com/max/700/1*OzJ7bW0VsC7fIlBB5fy39g.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwjv94x-a5AQpOhUKJeRv1uf9HdpHicYUDv2GBXTDIX0vbw1OrmnFdgMAMUdjpASrHrBA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Multi Step Form Component In Vue I Recently Started Learning Vuejs And By Tushar Gugnani Medium
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/VKKol.png" data-lightbox="roadtrip" data-title="How To Disable Only Leading Space In The Input Text Field Vue Js Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/VKKol.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTRsYsAuRmImwFtKtMIv2lDpY6eevOPeIQSw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Disable Only Leading Space In The Input Text Field Vue Js Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i1.wp.com/blog.couchbase.com/wp-content/uploads/2017/11/couchbase-vuejs-hapijs-nodejs.png?resize=900%2C421" data-lightbox="roadtrip" data-title="Going Full Stack With Node Js Vue Js And Couchbase Nosql">
+						<img class="card-img" src="https://i1.wp.com/blog.couchbase.com/wp-content/uploads/2017/11/couchbase-vuejs-hapijs-nodejs.png?resize=900%2C421" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNU0RGItqhXS9PY14gJy2DJCsnryqHKuuAHA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Going Full Stack With Node Js Vue Js And Couchbase Nosql
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://res.cloudinary.com/practicaldev/image/fetch/s--zJZ_L6L8--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://res.cloudinary.com/ratracegrad/image/upload/v1573916906/FormValidationWithVuetifyInAVueApp_kfvzqp.png" data-lightbox="roadtrip" data-title="Form Validation With Vuetify In A Vue App Dev Community">
+						<img class="card-img" src="https://res.cloudinary.com/practicaldev/image/fetch/s--zJZ_L6L8--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://res.cloudinary.com/ratracegrad/image/upload/v1573916906/FormValidationWithVuetifyInAVueApp_kfvzqp.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRcZXa-pEcfyrFYP_9htIUd_i3CyEEiPh7Uw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Validation With Vuetify In A Vue App Dev Community
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://vuejsexamples.com/content/images/2018/04/select-search.png" data-lightbox="roadtrip" data-title="A Component That Allows You To Search Select Options With Vue">
+						<img class="card-img" src="https://vuejsexamples.com/content/images/2018/04/select-search.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK_jivY-LZJ6wKCMI9VzBCYM9zF-VmyacaiQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				A Component That Allows You To Search Select Options With Vue
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i0.wp.com/www.jenniferbland.com/wp-content/uploads/1_vMo7oFLO8W2XYZsAIbnx1Q.png?fit=789%2C372&amp;ssl=1" data-lightbox="roadtrip" data-title="Form Validation With Vuetify In A Vue App">
+						<img class="card-img" src="https://i0.wp.com/www.jenniferbland.com/wp-content/uploads/1_vMo7oFLO8W2XYZsAIbnx1Q.png?fit=789%2C372&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsnLu9tl3ja2K5UN9TtVsqubgjY5NH8HF-wg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Validation With Vuetify In A Vue App
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.vuescript.com/wp-content/uploads/2018/08/Vue-Password-Strength-Validator-min.png" data-lightbox="roadtrip" data-title="Vue Password Strength Validator Vue Script">
+						<img class="card-img" src="https://www.vuescript.com/wp-content/uploads/2018/08/Vue-Password-Strength-Validator-min.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi5J-ClOFu6r_KTRkbN_XdfbWgjtM8GQTCcg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Password Strength Validator Vue Script
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/1200/1*JMZXvm7Ra60DDO-DXzAD5Q.png" data-lightbox="roadtrip" data-title="How To Add Input Mask To Enforce Input Format By John Au Yeung Javascript In Plain English">
+						<img class="card-img" src="https://miro.medium.com/max/1200/1*JMZXvm7Ra60DDO-DXzAD5Q.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNtNrUAdsZbvq4KoZolRwIJiAN2OBAh5CLg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Add Input Mask To Enforce Input Format By John Au Yeung Javascript In Plain English
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.pusher.com/wp-content/uploads/2018/03/building-external-modules-vuejs-header.png" data-lightbox="roadtrip" data-title="Complete Guide To Form Validation In Vue">
+						<img class="card-img" src="https://blog.pusher.com/wp-content/uploads/2018/03/building-external-modules-vuejs-header.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7weFwYaeD6CMyUwNVkh-XF5Cbwb6wRZRF-A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Complete Guide To Form Validation In Vue
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://5balloons.info/wp-content/uploads/2019/05/vuejs.png" data-lightbox="roadtrip" data-title="Simple Multi Step Form Wizard With Validation In Vuejs 5 Balloons">
+						<img class="card-img" src="https://5balloons.info/wp-content/uploads/2019/05/vuejs.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzxveUruTzT6Nti0pCG4QZ_wbzopyXVUaaRw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Simple Multi Step Form Wizard With Validation In Vuejs 5 Balloons
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://thetribe.io/wp-content/uploads/2020/09/vue_js.jpg" data-lightbox="roadtrip" data-title="Vue Js Form Validation Thetribe">
+						<img class="card-img" src="https://thetribe.io/wp-content/uploads/2020/09/vue_js.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68ZDGr57xH-g3QecMAMj8ok7P-H0h4aEuMQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vue Js Form Validation Thetribe
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i1.wp.com/res.cloudinary.com/ratracegrad/image/upload/v1573847911/1_aPWLD-tQ_iTZ0_K4ajjtDQ_pumbe3.png?resize=800%2C280&amp;ssl=1" data-lightbox="roadtrip" data-title="Form Validation With Vuetify In A Vue App">
+						<img class="card-img" src="https://i1.wp.com/res.cloudinary.com/ratracegrad/image/upload/v1573847911/1_aPWLD-tQ_iTZ0_K4ajjtDQ_pumbe3.png?resize=800%2C280&amp;ssl=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNeXfYhS_CPqengRUwP1TvLBcxpOHZORZgFg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Validation With Vuetify In A Vue App
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.logrocket.com/wp-content/uploads/2020/03/using-watchers-for-form-input-validation-in-Vuejs.png" data-lightbox="roadtrip" data-title="Using Watchers For Form Input Validation In Vue Js Logrocket Blog">
+						<img class="card-img" src="https://blog.logrocket.com/wp-content/uploads/2020/03/using-watchers-for-form-input-validation-in-Vuejs.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57m_wZo0Odhx-wa4SMBtnsWZGgUt3wJqPmQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Using Watchers For Form Input Validation In Vue Js Logrocket Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/10000/0*NfBTJMLFR_ANLo0e" data-lightbox="roadtrip" data-title="Real Time Unique Input Validation With Vuejs And Laravel By Josh Krawczyk Itnext">
+						<img class="card-img" src="https://miro.medium.com/max/10000/0*NfBTJMLFR_ANLo0e" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ07AjViHKR1J7Wj0nW-UZ5D6eWxWlDpgZaTw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Real Time Unique Input Validation With Vuejs And Laravel By Josh Krawczyk Itnext
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>
